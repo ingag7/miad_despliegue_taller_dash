@@ -21,7 +21,7 @@ app.config.suppress_callback_exceptions = True
 
 # Load data from csv
 def load_data():
-    df = pd.read_csv('//Users/ag7/Documents/MIAD/Ciclo 5 - 202415/Despliegue de Soluciones/Week 1/taller_tablero/datos_energia.csv')
+    df = pd.read_csv('/home/ec2-user/miad_despliegue_taller_dash/datos_energia.csv')
     
     # Convertir la columna de fecha al tipo datetime
     df['time'] = pd.to_datetime(df['time'])
